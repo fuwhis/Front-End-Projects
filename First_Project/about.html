@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About</title>
+<link rel="stylesheet" type="text/css" href="CSS/about.css">
+<script src="JS/slideshow.js"></script>
+<script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1280);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+<style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('images/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('images/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+    </style>
+</head>
+
+<body>
+<div class="container"> 
+	<header> <script src="js/jssor.slider-22.2.8.min.js" type="text/javascript"></script>
+    
+    
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1280px;height:420px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1280px;height:420px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="images/2.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/3.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/4.jpg" />
+            </div>
+            <a data-u="any" href="http://www.jssor.com" style="display:none">Simple Fade Slideshow</a>
+            <div>
+                <img data-u="image" src="images/5.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    </header>
+    <nav> 
+    		<a href="home.html"> Home </a>
+            <a href="about.html"> About </a>
+            <a href="news.html"> News </a>
+            <a href="promotion.html"> Promotions </a>
+            <a href="support.html"> Support </a>
+    </nav>
+    
+    <article>
+    	<div id="anh"> 
+    	<img id="imgSlide" src="images/1.png">
+        
+        <div id="previous"> <img src="images/prev.png" onClick="back()"> </div>
+        
+        <div id="next"> <img src="images/next.png" onClick="next()"> </div>
+    </div>
+    <div class="text">
+   	 <h3>About Us</h3>
+			
+				<p>Apple Inc. is an American multinational technology company headquartered in Cupertino, California that designs, develops, and sells consumer electronics, computer software, and online services. The company's hardware products include the iPhone smartphone, the iPad tablet computer, the Mac personal computer, the iPod portable media player, the Apple Watch smartwatch, and the Apple TV digital media player. Apple's consumer software includes the macOS and iOS operating systems, the iTunes media player, the Safari web browser, and the iLife and iWork creativity and productivity suites. Its online services include the iTunes Store, the iOS App Store and Mac App Store, Apple Music, and iCloud. 
+				<br><br>
+
+				Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in April 1976 to develop and sell personal computers. It was incorporated as Apple Computer, Inc. in January 1977, and sales of its computers saw significant momentum and revenue growth for the company. Within a few years, they had hired a staff of computer designers and had a production line. Apple went public in 1980 to instant financial success. Over the next few years, Apple shipped new computers featuring innovative graphical user interfaces, and Apple's marketing commercials for its products received widespread critical acclaim. However, the high price tag of its products and limited software titles caused problems, as did power struggles between executives at the company. Jobs resigned from Apple and created his own company. As the market for personal computers increased, Apple's computers saw diminishing sales due to lower-priced products from competitors, in particular those offered with the Microsoft Windows operating system. More executive job shuffles happened at Apple until then-CEO Gil Amelio in 1997 decided to buy Jobs' company to bring him back. Jobs regained position as CEO, and began a process to rebuild Apple's status, which included opening Apple's own retail stores in 2001, making numerous acquisitions of software companies to create a portfolio of software titles, and changed some of the hardware technology used in its computers. It again saw success and returned to profitability. In January 2007, Jobs announced that Apple Computer, Inc. would be renamed Apple Inc. to reflect its shifted focus toward consumer electronics, and announced the iPhone, which saw critical acclaim and significant financial success. In August 2011, Jobs resigned as CEO due to health complications, and Tim Cook became the new CEO. Two months later, Jobs died, marking the end of an era for the company.
+				<br><br>
+				Apple is the world's largest information technology company by revenue, and the world's second-largest mobile phone manufacturer after Samsung. In February 2015, Apple became the first U.S. company to be valued at over US$700 billion. The company employs 116,000 full-time employees as of October 2016 and maintains 498 retail stores in 22 countries as of July 2017. It operates the iTunes Store, which is the world's largest music retailer. As of January 2016, more than one billion Apple products are actively in use worldwide.
+                <br><br>
+                Apple's worldwide annual revenue totaled $215 billion for the 2016 fiscal year. The company enjoys a high level of brand loyalty and has been repeatedly ranked as the world's most valuable brand. However, it receives significant criticism regarding the labor practices of its contractors and its environmental and business practices, including the origins of source materials.
+                </p>
+			  	</div>
+  </article>
+    
+     <aside>
+      <h2> News Technology </h2>
+      
+    <div class="search">
+			<form>
+			  <input type="text" name="search" placeholder="Search...">
+			</form>
+		</div>
+  
+    
+		<table>
+  <tr>
+  	
+    <td><img src="images/ip7do.jpg" width="144" height="75"></td>
+    <td>Trên tay iPhone 7/7 Plus mạ vàng,...  
+    <a href="https://tinhte.vn/threads/tren-tay-iphone-7-7-plus-ma-vang-dinh-gan-300-vien-pha-le-swarovski-chi-phi-hon-20-trieu.2700497/">
+    Read more!					
+    </a>
+    </td>
+    
+  </tr>
+  <tr>
+    <td><img src="images/1662533.jpg" width="144" height="75"></td>
+    <td>iOS 11 có gì đáng mong đợi?
+    <a href="https://tinhte.vn/threads/tin-don-ios-11-nhung-tinh-nang-moi-moi-anh-em-chia-se-tinh-nang-mong-doi-nhat.2675658/">
+    Read more!</a></td>
+  </tr>
+  <tr>
+    <td><img src="images/1659087.jpg" width="144" height="75"></td>
+    <td>
+    Chụp ảnh màn hình TouchBar trên Macbook.
+    <a href="http://vnreview.vn/tu-van-may-tinh/-/view_content/content/2162664/chup-anh-man-hinh-touch-bar-tren-macbook">
+    Read more!
+    </a>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/1119227.jpg" width="144" height="75"></td>
+    <td>
+    Macbook Air 13-inch: Lý tưởng trong tầm giá.
+    <a href="http://vnreview.vn/danh-gia-laptop-chi-tiet/-/view_content/content/1119801/danh-gia-macbook-air-13-inch-2014-ly-tuong-trong-tam-gia">
+    Read more!
+    </a>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/photo-0-1495864656862.jpg" width="144" height="75"></td>
+    <td>iPhone 7s và iPhone 8 sẽ ra mắt chính thức vào ngày 17/09/2017 và...
+    <a href="https://www.thegioididong.com/tin-tuc/du-doan-iphone-8-se-co-gia-ban-bao-nhieu-khi-ve-viet-nam--982514">
+    Read more!
+    </a>
+    </td>
+  </tr>
+  <tr>
+  	<td><img src="images/ipad.jpg" width="144" height="93"></td>
+    <td>Lộ diện iPad 10.5-inch đẹp lộng lẫy...
+    <a href="http://genk.vn/lo-dien-ban-render-ipad-105-inch-voi-vien-mong-khong-co-nut-home-20170523100952118.chn">
+    Read more!
+    </a>
+    </td>
+  </tr>
+  <tr>
+  	<td><img src="images/life is.png" width="144" height="93"></td>
+    <td>Apple bảo Fan Android: Người sở iPhone thường ...
+    <a href="http://kenh14.vn/apple-noi-voi-fan-android-cuoc-song-se-de-dang-hon-khi-dung-iphone-2017052310122079.chn">Read more!
+    </a></td>
+  </tr>
+  <tr>
+  	<td><img src="images/asus-news.jpg" width="144" height="93"></td>
+    <td>Asus ra VivoBook S: laptop phổ thông giá chỉ 500 USD
+    <a href="http://vnreview.vn/tin-tuc-san-pham-moi/-/view_content/content/2173192/computex-2017-asus-ra-vivobook-s-laptop-pho-thong-gia-chi-500-usd">Read more!</a></td>
+  </tr>
+		</table>
+  
+    </aside>
+    
+    <footer>
+    <div class="footer_left">
+   <ul>
+   		<li>Phone: 0123456789</li>
+        <li>About us</li>
+        <li>FAQ</li>
+        <li>Contact: </li>
+		<li>Email: FPTabc@fpt.edu.vn</li>
+        <li>Facebook</li>
+   </ul> 
+    </div>
+    <div id="googleMap" style="width:30%;height:200px;float: right; margin-top: 20px; margin-right: 20px; "></div>
+   <div class="footer_right">
+    <img src="images/facebook_32.png" width="32" height="32">
+    &nbsp;
+    <img src="images/twitter_32.png" width="32" height="32">
+    &nbsp;
+    <img src="images/email_32.png" width="32" height="32">
+    
+   <div class="appStore">
+    <a href="https://www.apple.com/ios/app-store/">
+    <img src="images/banners/app_store_badge.png" width="90" height="30"></a>
+    </div>
+   </div>
+   
+   
+   <p>Copyright &copy; Apple Inc. All rights reserved </p>
+    </footer>
+    
+</div>
+
+<script>
+	function myMap() {
+	var mapProp= {
+		center:new google.maps.LatLng(10.8386779, 106.6652904),
+		zoom:10,
+	};
+	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDWjuv_D6gBl_DFuh39kIzOUbeRiK6e6Q&callback=myMap"></script>
+    
+</div>
+</body>
+</html>

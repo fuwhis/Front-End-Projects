@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+/*Container*/
+.container{max-width:1280px; height:auto; margin: 0 auto;}
+/*============================================================================*/
+/*Header contained Banner*/
+header{width:100%; height:420px;}
+
+header img{width:100%; height:420px;}
+
+/*============================================================================*/
+/*Nav contained Menu*/
+nav{width:100%; height:30px; margin-bottom:5px; background-color:#797979;}
+
+nav a{
+	color:#FFF; 
+	font-weight:bold; 
+	font-size:20px;
+	text-decoration:none; 
+	width:150px; height:30px; 
+	text-align:center; 
+	float:left; 
+	line-height:30px;}
+
+nav a:hover{color:#000; background-color:#FFF;}
+/*============================================================================*/
+/*Article contained Product*/
+article{
+	width:75%; 
+	min-height:auto; 
+	background-color:#FFF; 
+	color:#FFF; 
+	float:left; 
+	margin-bottom:15px;
+	overflow: sc;}
+#anh {
+	width: 950px; 
+	height: 360px; 
+	position: relative;
+	margin-left:auto;
+	margin-right:auto; }
+
+#anh #imgSlide {width:100%; height: 100%;} 
+
+#anh #previous {position:absolute; top: 170px; left: 0px; width: 28px; height: 44px; display: none;}
+
+#anh #next {position: absolute; top: 170px; right: 0px; width: 28px; height: 44px; display: none;}
+
+#anh:hover #previous {display: block; opacity: 0.7;}
+
+#anh:hover #next {display: block; opacity: 0.7;}
+
+.text{color: #000;}
+
+/*============================================================================*/
+/*Aside contained News*/
+aside{
+	width:24%; 
+	min-height:620px;
+	background-color:#E3E8E7; 
+	color:#FFF; 
+	float:right; 
+	margin-bottom:5px; 
+	overflow:hidden;}
+
+aside h2{ 
+	color:#FFF; 
+	background-color:#333; 
+	height: 40px; 
+	margin: 0px; 
+	text-align:center; 
+	line-height:40px; }
+
+aside table td{text-align:left; color:#333; }
+
+aside table td img{-webkit-border-radius:10px;}
+
+.search{
+	margin-left:auto;
+	margin-right:auto;
+	width: 100%;
+	border 2px solid #09F;
+	-webkit-border-radius:10px;
+	padding-bottom:10px;
+}
+aside input:focus{
+	background-color: #B7DBFF;
+	transition: 0.5s;
+}
+/*============================================================================*/
+/*Footer contained information to contacting*/ 
+footer{
+	width:100%; 
+	min-height:200px; 
+	background-color:#EAEAEA; 
+	color:#FFF; 
+	clear:both;
+	border-bottom: 2px solid #000;}
+
+footer .footer_left{ 
+	width:40%; 
+	height:200px; 
+	float:left; }
+
+footer .footer_right{ 
+	width:20%; height:100px; 	
+	float:right; 
+	margin-top:40px;}
+
+ul{ list-style-type: circle; 
+	padding-top: 20px;
+}
+
+ul li{ font-size:18px; color:#333; border-bottom: dotted 1px; }
+
+.appStore{margin-left:10px; margin-right:10px; margin-top:20px; margin-bottom: 20px;}
+
+
+footer p{ text-align:center; font-style:italic; clear:both; color:#333; }
+/*======================================================*/
+
+

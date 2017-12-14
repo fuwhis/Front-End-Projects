@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+/*Container*/
+.container{
+	max-width:1280px; 
+	height:auto; 
+	margin: 0 auto;
+	}
+/*===============================*/
+/*Header contained Banner*/
+header{
+	width:100%; 
+	height:420px;
+	}
+
+header img{
+	width:100%; 
+	height:420px;}
+
+/*===============================*/
+/*Nav contained Menu*/
+nav{
+	width:100%; 
+	height:30px; 
+	margin-bottom:5px; 
+	background-color:#666;}
+
+nav a{
+	color:#FFF; 
+	font-weight:bold; 
+	font-size:20px;
+	text-decoration:none; 
+	width:150px; height:30px; 
+	text-align:center; 
+	float:left; 
+	line-height:30px;}
+
+nav a:hover{
+	color:#000; 
+	background-color:#666;}
+/*===============================*/
+/*Article contained Product*/
+article {
+	width:76%;
+	height:620px; 
+	background-color:#FFF; 
+	color:#FFF; float:left; 
+	margin-bottom:5px; 
+	overflow:auto;}
+
+article h1{
+	text-align:center; 
+	font-size:24px; 
+	color:#333; 
+	font-family:Tahoma, Geneva, sans-serif;}
+
+article h2{
+	text-align:left; 
+	font-size:16px; 
+	font-size:bold; 
+	color:#333;}
+
+article p{
+	text-align:justify; 
+	margin: 10px; 
+	font-size:16px; 
+	color:#333; 
+	font-family:Tahoma, Geneva, sans-serif;}
+
+article img{
+	width:720px; 
+	height:360px;
+	margin-left:100px; 
+	margin-right:auto; 
+	margin-top:10px; 
+	margin-bottom:10px;}
+
+article ul.widenews{
+	text-align:left; 
+	margin:0px; 
+	font-size:3px; 
+	color:#06F; 
+	text-decoration:none;}
+
+/*===============================*/
+/*Aside contained News*/
+aside{
+	width:24%; 
+	height:620px; 
+	background-color:#E3E8E7; 
+	color:#FFF; 
+	float:right; 
+	margin-bottom:5px; 
+	overflow:auto;  }
+
+aside h2{ 
+	color:#FFF; 
+	background-color:#333; 
+	height: 40px; 
+	margin: 0px; 
+	text-align:center; 
+	line-height:40px; }
+
+aside table td{
+	text-align:left; 
+	color:#333; }
+
+aside table td img{-webkit-border-radius:10px;}
+
+/*================================================*/
+/*Footer contained information to contacting*/ 
+footer{
+	width:100%;
+	min-height:200px; 
+	background-color:#EAEAEA; 
+	color:#FFF; 
+	clear:both;}
+
+footer .footer_left{ 
+	width:40%; 
+	height:200px; 
+	float:left; }
+
+footer .footer_right{ 
+	width:20%; 
+	height:100px; 
+	float:right; 
+	margin-top:40px;}
+
+ul{ 
+	list-style-type: square; 
+	padding-top: 20px;}
+
+ul li{ 
+	font-size:18px; 
+	color:#333;}
+
+footer p{ 
+	text-align:center; 
+	font-style:italic; 
+	clear:both; 
+	color:#333; }
+
